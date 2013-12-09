@@ -1,0 +1,32 @@
+.container {
+}
+
+.container form {
+  padding: 5px;
+}
+
+.container label {
+  font-family: Helvetica;
+  font-weight: bold;
+  color: #4682B4;
+  padding: 2px; 
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 50%;
+  text-align: right;
+}
+
+.container input {
+  border: 2px solid #dadada;
+  border-radius: 3px;
+  padding: 2px;
+  display: inline-block;
+  float: left;
+}
+
+.container input:focus { 
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+}
