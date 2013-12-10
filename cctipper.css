@@ -7,7 +7,7 @@
 
 .container label {
   font-family: Helvetica;
-  font-size: large;
+  font-size: medium;
   font-weight: bold;
   color: #4682B4;
   padding: 5px; 
@@ -25,7 +25,7 @@
   display: inline-block;
   float: left;
   height: 20px;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .container input:focus { 
