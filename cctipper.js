@@ -1,5 +1,6 @@
 function onChangeInput(input)
 {
+    input.value = Number(input.value).toFixed(2);
     var form = document.getElementById("ccTipperForm");
     for(i = 0; i< form.childNodes.length; i++)
     {
@@ -22,12 +23,12 @@ function calculateNewValue(input)
     else if ("totalTips" == input.id)
     {
         var totalTips = checkTotal * (percentTips/100);
-        input.value = Math.round(totalTips * 100) / 100;
+        input.value = (Math.round(totalTips * 100) / 100).toFixed(2);
     }
     else if ("grandTotal" == input.id)
     {
         var grandTotal = checkTotal * (1 + percentTips/100);
-        input.value = Math.round(grandTotal * 100) / 100;
+        input.value = (Math.round(grandTotal * 100) / 100).toFixed(2);
     }
     else if ("totalPerPerson" == input.id)
     {
